@@ -1,0 +1,147 @@
+/* MangoBar - Dark Blue / Square / Compact */
+
+
+@define-color color-bg      #101520;
+@define-color color-fg      #d1dae8;
+@define-color color-bg-alt  #101520;
+
+@define-color color-button-urgent-bg    #3c4a60;
+@define-color color-button-urgent-fg    #e0e8f0;
+@define-color color-workspace-button-bg #101520;
+@define-color color-workspace-button-fg #d1dae8;
+@define-color color-workspace-button-hover-bg   #2a3648;
+@define-color color-workspace-button-hover-fg   #e0e8f0;
+@define-color color-workspace-button-focused-bg #6c7e97;
+@define-color color-workspace-button-focused-fg #101520;
+
+/* Global */
+
+* {
+    font-family: "Iosevka";
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    min-height: 0;
+}
+
+/* Main Bar */
+#bar{
+    basckground-color: #101520;
+    color: #d1dae8;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #2a3648;
+}
+
+/* Selected bar */
+#bar.sel {
+    background: #101520;
+}
+
+/* Workspaces */
+#tags{
+    padding: 0 8px;
+    margin: 0;
+    background-color: #101520;
+    color: #d1dae8;
+}
+
+#tags:hover {
+    background-color: #2a3648;
+    color: #e0e8f0;
+}
+
+#tags:active {
+    background-color: #6c7e97;
+    color: #101520;
+}
+
+#tags.urgent {
+    background-color: #3c4a60;
+    color: #e0e8f0;
+}
+
+#tags.occupied,
+#tags.empty {
+    background-color: #101520;
+    color: #d1dae8;
+}
+
+/* Overview */
+#overview {
+    padding: 0 8px;
+    background-color: #6c7e97;
+    color: #101520;
+}
+
+/* Layout indicator */
+#layout {
+    padding: 0 8px;
+    margin: 0;
+    background-color: #101520;
+}
+
+/* Center window title - main fix */
+#title {
+    background-color: #101520;
+    color: #d1dae8;
+    margin: 0;
+    padding: 0 10px;
+    min-height: 0;
+    border-radius: 0;
+}
+
+/* Right-side modules */
+#clock,
+#clock.date,
+#cpu,
+#mem,
+#brightness,
+#volume,
+#network,
+#battery,
+#keymode,
+#keyboardlayout {
+    background-color: #101520;
+    padding: 0 7px;
+    margin: 0;
+    min-height: 0;
+}
+
+/* Power */
+#custom-power {
+    padding: 0 8px;
+    margin: 0;
+    background-color: #101520;
+}
+
+/* Tray */
+#tray {
+    padding: 0 6px;
+    margin: 0;
+    background-color: #101520
+}
+
+/* Menus  */
+menu {
+    background-color: #1a222e;
+    border: 1px solid #2a3648;
+    border-radius: 0;
+    font-size: 13px;
+}
+
+menuitem {
+    color: #101520;
+    padding: 4px 8px;
+    border-radius: 0;
+}
+
+menuitem:hover {
+    color: #101520;
+    background-color: #6c7e97;
+}
