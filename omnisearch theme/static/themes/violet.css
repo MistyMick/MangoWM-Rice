@@ -1,0 +1,22 @@
+:root {
+    --bg-main: #101520;
+    --bg-card: #191d28;
+    --border: #303747;
+    --text-primary: #d1dae8;
+    --text-secondary: #a9b3c8;
+    --text-muted: #7f8aa2;
+    --accent: #8096DF;
+    --accent-glow: rgba(128,150,253,0.18);
+    --accent-secondary: #50e3c2;
+}
+
+/* Mint secondary accent */
+.search-box:focus {
+    border-color: var(--accent-secondary);
+    box-shadow: 0 0 0 4px rgba(80, 227, 194, 0.18);
+}
+
+.view-home .btn-secondary:hover {
+    border-color: var(--accent-secondary);
+    color: var(--accent-secondary);
+}
